@@ -2,7 +2,8 @@
 #define DIALOG_H
 
 #include <QDialog>
-#include "listingswidgets.h"
+
+#include "listingdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
@@ -21,6 +22,7 @@ private slots:
 
 private:
     Ui::Dialog *ui;
-    ListingsWidgets *lw;
+
+    ListingDialog *ld;
 };
 #endif // DIALOG_H

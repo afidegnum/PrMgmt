@@ -10,19 +10,16 @@ CONFIG += c++11
 
 SOURCES += \
     listingdialog.cpp \
-    listingswidgets.cpp \
     main.cpp \
     dialog.cpp
 
 HEADERS += \
     dialog.h \
-    listingdialog.h \
-    listingswidgets.h
+    listingdialog.h
 
 FORMS += \
     dialog.ui \
-    listingdialog.ui \
-    listingswidgets.ui
+    listingdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

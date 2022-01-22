@@ -9,6 +9,7 @@ Dialog::Dialog(QWidget *parent)
     ui->setupUi(this);
 }
 
+
 Dialog::~Dialog()
 {
     delete ui;
@@ -22,8 +23,10 @@ void Dialog::on_push_LoginButton_clicked()
 
     if(usr == "test" && pwd == "test"){
         hide();
-        lw = new ListingsWidgets(this);
-        lw->show();
+        // lw = new ListingsWidgets(this);
+        // lw->show();
+        ld = new ListingDialog(this);
+        ld->show();
     }else{
         QMessageBox::warning(this,"Login", "InCorrecto!");
     }
